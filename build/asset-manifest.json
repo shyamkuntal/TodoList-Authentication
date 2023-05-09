@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.dbe68482.chunk.css",
-    "main.js": "/static/js/main.6b1a39ed.chunk.js",
-    "main.js.map": "/static/js/main.6b1a39ed.chunk.js.map",
+    "main.js": "/static/js/main.73c354ff.chunk.js",
+    "main.js.map": "/static/js/main.73c354ff.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.21a41feb.js",
     "runtime-main.js.map": "/static/js/runtime-main.21a41feb.js.map",
     "static/js/2.74fd4de2.chunk.js": "/static/js/2.74fd4de2.chunk.js",
@@ -10,13 +10,13 @@
     "index.html": "/index.html",
     "static/css/main.dbe68482.chunk.css.map": "/static/css/main.dbe68482.chunk.css.map",
     "static/js/2.74fd4de2.chunk.js.LICENSE.txt": "/static/js/2.74fd4de2.chunk.js.LICENSE.txt",
-    "static/js/main.6b1a39ed.chunk.js.LICENSE.txt": "/static/js/main.6b1a39ed.chunk.js.LICENSE.txt",
+    "static/js/main.73c354ff.chunk.js.LICENSE.txt": "/static/js/main.73c354ff.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/glenn-carstens-peters-RLw-UC03Gwc-unsplash.6f4489a7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.21a41feb.js",
     "static/js/2.74fd4de2.chunk.js",
     "static/css/main.dbe68482.chunk.css",
-    "static/js/main.6b1a39ed.chunk.js"
+    "static/js/main.73c354ff.chunk.js"
   ]
 }

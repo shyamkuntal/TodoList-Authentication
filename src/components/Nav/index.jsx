@@ -18,7 +18,7 @@ const Nav = ({ isAuthenticated, logoutHandler, username }) => {
               </Link>
             </li>
             <li>
-              <Link to="/todolist"> Your TodoList</Link>
+              <Link to="/todolist"> My TodoList</Link>
             </li>
           </>
         ) : (
@@ -29,7 +29,7 @@ const Nav = ({ isAuthenticated, logoutHandler, username }) => {
         {isAuthenticated ? (
           <li className="welcome">
             {" "}
-            Hello {username}<span className="username"> {username}</span>{" "}
+            Hello<span className="username"> {username}</span>{" "}
           </li>
         ) : null}
       </ul>

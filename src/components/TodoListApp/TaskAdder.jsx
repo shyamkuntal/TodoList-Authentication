@@ -50,7 +50,7 @@ const TaskAdder = ({token, todos, setSelectedOption, setTodos, selectedFilter}) 
 
   return (
     <div className="todo-container">
-      <h1 className="title">Your Todo List</h1>
+      <h1 className="title">Todo List</h1>
       <form className="add-form" action="" onSubmit={onFormSubmit}>
         <input
           onChange={(e) => setTaskInput(e.target.value)}
