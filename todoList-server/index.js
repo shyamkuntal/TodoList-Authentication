@@ -8,7 +8,12 @@ const app = require("./app");
 const PORT = process.env.PORT || 8000;
 const DOMAIN = process.env.DOMAIN || "127.0.0.1";
 
+<<<<<<< HEAD
 if (process.env.DB) {    
+=======
+
+if (process.env.DB) {
+>>>>>>> 11dec6adce590e9e3666996693319b392d04351f
   mongoose
     .connect(process.env.DB, {
       useNewUrlParser: true,
