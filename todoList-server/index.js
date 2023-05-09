@@ -7,11 +7,10 @@ const app = require("./app");
 
 const PORT = process.env.PORT || 8000;
 const DOMAIN = process.env.DOMAIN || "127.0.0.1";
-const DB = "mongodb+srv://chaudharyshyam1355:Shyam@123@todolist.obrusa9.mongodb.net/?retryWrites=true&w=majority"
 
-if (DB) {    
+if (process.env.DB) {    
   mongoose
-    .connect(DB, {
+    .connect(process.env.DB, {
       useNewUrlParser: true,
       useFindAndModify: false,
       useUnifiedTopology: true,

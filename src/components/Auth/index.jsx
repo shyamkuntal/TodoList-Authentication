@@ -18,7 +18,7 @@ const Auth = ({isAuthenticated, authHandler}) => {
     };
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/users/login/",
+        "https://todolist-server-hc2k.onrender.com/api/v1/users/login/",
         loginData
       );
       cookies.set("token", response.data.token);
@@ -37,7 +37,7 @@ const Auth = ({isAuthenticated, authHandler}) => {
     };
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/users/signup/",
+        "https://todolist-server-hc2k.onrender.com/api/v1/users/signup/",
         signupData
       );
       cookies.set("token", response.data.token);
