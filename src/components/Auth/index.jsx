@@ -4,6 +4,8 @@ import "./Auth.css";
 import { Redirect } from "react-router-dom";
 import Cookies from "universal-cookie";
 
+const backend = "https://todolist-server-hc2k.onrender.com"
+
 const Auth = ({isAuthenticated, authHandler}) => {
   // states
   const [loginFormShow, setLoginFormShow] = useState(true);
@@ -18,7 +20,7 @@ const Auth = ({isAuthenticated, authHandler}) => {
     };
     try {
       const response = await axios.post(
-        "https://todolist-server-hc2k.onrender.com/api/v1/users/login/",
+        `${backend}/api/v1/users/login/`,
         loginData
       );
       cookies.set("token", response.data.token);
@@ -37,7 +39,7 @@ const Auth = ({isAuthenticated, authHandler}) => {
     };
     try {
       const response = await axios.post(
-        "https://todolist-server-hc2k.onrender.com/api/v1/users/signup/",
+        `${backend}/api/v1/users/signup/`,
         signupData
       );
       cookies.set("token", response.data.token);
