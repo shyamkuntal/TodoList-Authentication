@@ -2,11 +2,14 @@ import React from "react";
 import "./Todo.css";
 import axios from "axios";
 
+const backend = "https://todolist-server-hc2k.onrender.com"
+
+
 const Todo = ({token, todo, todos, setTodos}) => {
   const deleteHandler = async () => {
     try {
       const deleteTodoData = await axios.delete(
-        `http://localhost:8000/api/v1/todos/${todo._id}`,
+        `${backend}/api/v1/todos/${todo._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -28,7 +31,7 @@ const Todo = ({token, todo, todos, setTodos}) => {
   const completeHandler = async () => {
     try {
       const completeTodoData = await axios.patch(
-        `http://localhost:8000/api/v1/todos/${todo._id}`,
+        `${backend}/api/v1/todos/${todo._id}`,
         {
           isChecked: !todo.isChecked,
         },

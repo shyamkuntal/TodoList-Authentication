@@ -2,6 +2,9 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./TaskAdder.css";
 
+const backend = "https://todolist-server-hc2k.onrender.com"
+
+
 const TaskAdder = ({token, todos, setSelectedOption, setTodos, selectedFilter}) => {
   // states
   const [taskInput, setTaskInput] = useState('');
@@ -19,7 +22,7 @@ const TaskAdder = ({token, todos, setSelectedOption, setTodos, selectedFilter}) 
     //this function get the new todos and add them to the previous ones
     try {
       const addingTodoData = await axios.post(
-        "http://localhost:8000/api/v1/todos/",
+        `${backend}/api/v1/todos/`,
         {
           //to server
           name: "todos",
