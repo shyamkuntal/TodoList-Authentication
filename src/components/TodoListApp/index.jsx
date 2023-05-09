@@ -4,6 +4,8 @@ import TodoList from "./TodoList";
 import Cookies from "universal-cookie";
 import axios from "axios";
 
+const backend = "https://todolist-server-hc2k.onrender.com"
+
 const TodoListApp = ({setUsername}) => {
   // states
   const [todos, setTodos] = useState([]);
@@ -18,7 +20,7 @@ const TodoListApp = ({setUsername}) => {
     const getUserData = async () => {
       try {
         const userData = await axios.get(
-          "http://localhost:8000/api/v1/users/me",
+          `${backend}/api/v1/users/me`,
           {
             headers: {
               Authorization: `Bearer ${token}`, //means the header have token
@@ -38,7 +40,7 @@ const TodoListApp = ({setUsername}) => {
   }, []);
 
   const getTodos = async () => {
-    const userTodos = await axios.get("http://localhost:8000/api/v1/todos", {
+    const userTodos = await axios.get(`${backend}/api/v1/todos`, {
       headers: {
         Authorization: `Bearer ${token}`, //means the header have token
       },
