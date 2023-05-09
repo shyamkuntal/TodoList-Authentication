@@ -29,7 +29,7 @@ const Nav = ({ isAuthenticated, logoutHandler, username }) => {
         {isAuthenticated ? (
           <li className="welcome">
             {" "}
-            Hello Dear<span className="username"> {username}</span>{" "}
+            Hello {username}<span className="username"> {username}</span>{" "}
           </li>
         ) : null}
       </ul>
