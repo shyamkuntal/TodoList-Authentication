@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "webpack --config webpack.config.js"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MhKh78/todoList-server.git"
+    "url": "git+https://github.com/shyamkuntal/TodoList-Authentication.git"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

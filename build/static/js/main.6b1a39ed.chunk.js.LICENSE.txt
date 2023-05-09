@@ -1,0 +1,7 @@
+//! [] --> initial render
+
+//! [data] --> initial render and run if the data change
+
+//! initial render and run if the data change
+
+//! nothing --> inotial render and run after every rerender
